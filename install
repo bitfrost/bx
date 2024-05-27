@@ -11,10 +11,6 @@ NC='\033[0m' # No Color
 os=$(uname -s | tr '[:upper:]' '[:lower:]')
 arch=$(uname -m)
 
-if [[ "$arch" == "aarch64" ]]; then 
-  arch="arm64"
-fi
-
 filename="$APP-$os-$arch.zip"
 
 
